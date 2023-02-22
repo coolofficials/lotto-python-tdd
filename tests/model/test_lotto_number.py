@@ -9,9 +9,7 @@ import lotto.model
 
 def test_range_success():
     proper_lotto_number = lotto.model.LottoNumber(45)
-    assert proper_lotto_number.number in range(
-        lotto.model.lotto_number.MIN_LOTTO_NUMBER, lotto.model.lotto_number.MAX_LOTTO_NUMBER + 1
-    )
+    assert proper_lotto_number.number in range(lotto.model.MIN_LOTTO_NUMBER, lotto.model.MAX_LOTTO_NUMBER + 1)
 
 
 def test_range_fail():
