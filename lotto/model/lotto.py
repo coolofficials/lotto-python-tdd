@@ -8,6 +8,11 @@ LOTTO_LENGTH = 6
 
 
 class Lotto:
+    """
+    Class defining Lotto with LOTTO_LENGTH LottoNumbers.
+    It is guaranted that LottoNumbers are sorted.
+    """
+
     def __init__(self, numbers: List[int]):
         if len(numbers) > LOTTO_LENGTH:
             raise ValueError("Exceeded length.")
