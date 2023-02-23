@@ -12,3 +12,7 @@ Python TDD practice project lotto.
 - Using database with sqlalchemy
 - Concurrenct programming with python
 - Using docker to control development environment
+
+# Small tips learned
+- Disabling pyright and flake8 in test files
+- How to notate type in self referencing class
