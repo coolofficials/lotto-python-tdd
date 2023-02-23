@@ -22,6 +22,12 @@ def test_shorter_lotto_length():
         shorter_lotto = lotto.model.Lotto([1, 2, 3, 4, 5])
 
 
+## Lotto with invalid LottoNumber test.
+def test_invalid_lotto_number():
+    with pytest.raises(ValueError):
+        improper_lotto = lotto.model.Lotto([1, 2, 3, 4, 5, 46])
+
+
 ## Duplication test.
 def test_not_duplicated_lotto():
     proper_lotto = lotto.model.Lotto([1, 2, 3, 4, 5, 6])
